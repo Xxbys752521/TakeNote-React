@@ -1,6 +1,5 @@
 /node_modules
 /coverage
-/dist
 /cypress
 .idea
 .DS_Store

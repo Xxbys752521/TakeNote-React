@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "takenote",
   "version": "0.7.2",
   "description": "A web-based notes app for developers.",
@@ -19,7 +20,9 @@
     "test:coverage": "jest --config config/jest.config.js --coverage --watchAll=false",
     "test:coverage:ci": "jest --config config/jest.config.js --ci --coverage --watchAll=false && cat ./coverage/lcov.info | coveralls",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss,md}\"",
-    "eslint": "eslint src/**/*.{ts,tsx}"
+    "eslint": "eslint src/**/*.{ts,tsx}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -41,7 +44,6 @@
   "bugs": {
     "url": "https://github.com/taniarascia/takenote/issues"
   },
-  "homepage": "https://takenote.dev",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
