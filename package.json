@@ -41,9 +41,6 @@
     "react-hooks-redux",
     "github"
   ],
-  "bugs": {
-    "url": "https://github.com/taniarascia/takenote/issues"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
