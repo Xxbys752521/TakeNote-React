@@ -3,7 +3,7 @@ import React from 'react'
 import logo from '@resources/assets/logo-square-color.svg'
 
 const clientId = process.env.CLIENT_ID
-const isDemo = process.env.DEMO
+const isDemo = true
 
 export const LandingPage: React.FC = () => {
   return (

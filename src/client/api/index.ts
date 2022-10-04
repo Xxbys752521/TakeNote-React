@@ -39,7 +39,7 @@ const welcomeNote = {
   id: uuid(),
   text: markdown,
   category: '',
-  favorite: false,
+  favorite: true,
   created: dayjs().format(),
   lastUpdated: dayjs().format(),
 }
